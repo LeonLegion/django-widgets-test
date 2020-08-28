@@ -1,0 +1,12 @@
+[[source]]
+name = "ct"
+url = "${CT_PYPI_URL}"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django-widgets = "*"
+
+[requires]
+python_version = "3.8"
