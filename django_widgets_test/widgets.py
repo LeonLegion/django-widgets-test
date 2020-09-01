@@ -18,3 +18,6 @@ class HelloWidget(django_widgets.Widget):
             'all': ('django_widgets_test/widgets/hello.css', 'django_widgets_test/widgets/hello.span.css')
         }
 
+
+class HelloJinja2Widget(HelloWidget):
+    template_name = 'django_widgets_test/widgets/hello.jinja2'

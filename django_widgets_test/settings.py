@@ -56,6 +56,12 @@ ROOT_URLCONF = 'django_widgets_test.urls'
 
 TEMPLATES = [
     {
+        'BACKEND': 'django.template.backends.jinja2.Jinja2',
+        'DIRS': [os.path.join(BASE_DIR , 'jinja2')],
+        'APP_DIRS': True,
+        'OPTIONS': {'environment': 'django_widgets_test.jinja2.environment', },
+    },
+    {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
         'APP_DIRS': True,
