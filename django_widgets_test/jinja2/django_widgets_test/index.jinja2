@@ -1,10 +1,10 @@
 <html>
   <head>
     <title>Jinja2</title>
-    {#% widgetmedia %#}
+    {% widgetmedia 'style' %}
   </head>
   <body>
-    {% widget 'hello' %}
-    {#% widget 'hello' class="hello" %#}
+    {% widget 'hello' class="hello" %}
+    {% widgetmedia 'script' %}
   </body>
 </html>
