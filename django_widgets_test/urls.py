@@ -17,8 +17,9 @@ from django.contrib import admin
 from django.urls import path
 
 from django_widgets_test.views import IndexView, Jinja2View
+from django.contrib.staticfiles.urls import urlpatterns
 
-urlpatterns = [
+urlpatterns += [
     path('', IndexView.as_view(), name='index'),
     path('jinja2/', Jinja2View.as_view(), name='jinja2'),
 ]

@@ -14,6 +14,11 @@ class IndexView(TemplateView):
 class Jinja2View(TemplateView):
     template_name = 'django_widgets_test/index.jinja2'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['world'] = 'World'
+        return context
+
     def setup(self, request, *args, **kwargs):
         super().setup(request, *args, **kwargs)
         add_widget(request, 'hello', HelloJinja2Widget())
