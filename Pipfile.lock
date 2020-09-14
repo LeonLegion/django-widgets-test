@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "42aa98ae6558cb894a75cbcd9d50b69e7ebb3a417c2ee3c2e480db2d143ec4fa"
+            "sha256": "22f0b68d9142d7e308d62a4cd1ede621c3c94c85972f93f4c8d6832e35311def"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -9,8 +9,8 @@
         },
         "sources": [
             {
-                "name": "ct",
-                "url": "${CT_PYPI_URL}",
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
                 "verify_ssl": true
             }
         ]
@@ -34,7 +34,7 @@
             "hashes": [
                 "sha256:75145405efec68e4149e3cfaa61c557d95d51b18aea6ea241ffe55588219f5d0"
             ],
-            "index": "ct",
+            "index": "pypi",
             "version": "==0.1.16"
         },
         "jinja2": {
@@ -42,7 +42,7 @@
                 "sha256:89aab215427ef59c34ad58735269eb58b1a5808103067f7bb9d5836c651b3bb0",
                 "sha256:f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035"
             ],
-            "index": "ct",
+            "index": "pypi",
             "version": "==2.11.2"
         },
         "markupsafe": {
